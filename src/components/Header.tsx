@@ -29,7 +29,7 @@ export function Header() {
               <span className="text-secondary-foreground font-[family-name:var(--font-heading)] font-bold text-lg leading-tight block">
                 Sumo Institute
               </span>
-              <span className="text-gold text-xs font-medium tracking-wider uppercase">of Technology</span>
+              <span className="text-gold text-m font-medium tracking-wider uppercase">of Technology</span>
             </div>
           </Link>
 
@@ -42,7 +42,7 @@ export function Header() {
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === link.to
                     ? "text-gold"
-                    : "text-secondary-foreground/70 hover:text-secondary-foreground"
+                    : "text-white hover:text-gold"
                 }`}
               >
                 {link.label}
@@ -82,7 +82,7 @@ export function Header() {
                 className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                   location.pathname === link.to
                     ? "text-gold bg-secondary-foreground/5"
-                    : "text-secondary-foreground/70 hover:text-secondary-foreground"
+                    : "text-white hover:text-gold"
                 }`}
               >
                 {link.label}
