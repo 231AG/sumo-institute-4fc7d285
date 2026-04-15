@@ -25,9 +25,12 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 shrink-0">
             <img src={sitLogo} alt="Sumo Institute of Technology" className="w-10 h-10 rounded-lg object-cover" />
-            <span className="hidden sm:block text-secondary-foreground font-[family-name:var(--font-heading)] font-bold text-base leading-tight">
-              Sumo Institute of Technology
-            </span>
+            <div className="hidden sm:block">
+              <span className="text-secondary-foreground font-[family-name:var(--font-heading)] font-bold text-sm leading-tight block">
+                Sumo Institute
+              </span>
+              <span className="text-gold font-[family-name:var(--font-heading)] font-bold text-sm leading-tight">of Technology</span>
+            </div>
           </Link>
 
           {/* Desktop nav */}
