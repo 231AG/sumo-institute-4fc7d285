@@ -25,12 +25,9 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 shrink-0">
             <img src={sitLogo} alt="Sumo Institute of Technology" className="w-10 h-10 rounded-lg object-cover" />
-            <div className="hidden sm:block">
-              <span className="text-secondary-foreground font-[family-name:var(--font-heading)] font-bold text-lg leading-tight block">
-                Sumo Institute
-              </span>
-              <span className="text-gold text-xs font-medium tracking-wider uppercase">of Technology</span>
-            </div>
+            <span className="hidden sm:block text-secondary-foreground font-[family-name:var(--font-heading)] font-bold text-base leading-tight">
+              Sumo Institute of Technology
+            </span>
           </Link>
 
           {/* Desktop nav */}
@@ -42,7 +39,7 @@ export function Header() {
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === link.to
                     ? "text-gold"
-                    : "text-secondary-foreground/70 hover:text-secondary-foreground"
+                    : "text-white hover:text-gold"
                 }`}
               >
                 {link.label}
@@ -82,7 +79,7 @@ export function Header() {
                 className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                   location.pathname === link.to
                     ? "text-gold bg-secondary-foreground/5"
-                    : "text-secondary-foreground/70 hover:text-secondary-foreground"
+                    : "text-white hover:text-gold"
                 }`}
               >
                 {link.label}

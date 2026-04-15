@@ -11,10 +11,9 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img src={sitLogo} alt="Sumo Institute of Technology" className="w-10 h-10 rounded-lg object-cover" />
-              <div>
-                <span className="font-[family-name:var(--font-heading)] font-bold text-lg block leading-tight">Sumo Institute</span>
-                <span className="text-gold text-xs tracking-wider uppercase">of Technology</span>
-              </div>
+              <span className="font-[family-name:var(--font-heading)] font-bold text-base leading-tight">
+                Sumo Institute of Technology
+              </span>
             </div>
             <p className="text-secondary-foreground/60 text-sm leading-relaxed">
               Technology, Skills and Innovation for Development. Building Africa's next generation of tech leaders.
@@ -65,7 +64,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-secondary-foreground/60">
                 <Phone className="w-4 h-4 text-gold shrink-0" />
-                <span>+1 (234) 567-8900</span>
+                <span>+231 778 747-451</span>
               </li>
               <li className="flex items-center gap-2 text-secondary-foreground/60">
                 <Mail className="w-4 h-4 text-gold shrink-0" />
