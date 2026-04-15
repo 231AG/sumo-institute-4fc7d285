@@ -45,7 +45,7 @@ function ContactPage() {
             <SectionTitle>Contact Information</SectionTitle>
             {[
               { icon: MapPin, label: "Address", value: "Sumo Institute of Technology\nMain Campus, Technology Drive" },
-              { icon: Phone, label: "Phone", value: "+1 (234) 567-8900\n+1 (234) 567-8901" },
+              { icon: Phone, label: "Phone", value: "+231 778 747-451" },
               { icon: Mail, label: "Email", value: "info@sit.edu\nadmissions@sit.edu" },
               { icon: Clock, label: "Office Hours", value: "Monday – Friday: 8:00 AM – 5:00 PM\nSaturday: 9:00 AM – 1:00 PM" },
             ].map((item) => (
