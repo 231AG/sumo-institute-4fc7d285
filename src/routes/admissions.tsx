@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Section, SectionTitle, CTABanner } from "@/components/SectionComponents";
-import { CheckCircle, FileText, CreditCard, Download, ArrowRight } from "lucide-react";
+import { CheckCircle, FileText, Download, ArrowRight } from "lucide-react";
+import { admissionRequirements } from "@/data/admissionRequirements";
 
 export const Route = createFileRoute("/admissions")({
   head: () => ({
@@ -39,44 +40,21 @@ function AdmissionsPage() {
 
       {/* Requirements */}
       <Section>
-        <SectionTitle subtitle="General requirements for admission to SIT programs.">Admission Requirements</SectionTitle>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-card border border-border rounded-2xl p-8">
-            <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold mb-4">Degree Programs (BSc)</h3>
-            <ul className="space-y-3">
-              {[
-                "High school diploma or equivalent",
-                "Minimum GPA of 2.5 (program-specific)",
-                "Credits in Mathematics (all programs)",
-                "Credits in Physics (Engineering & Networking)",
-                "English proficiency certificate",
-                "Two recommendation letters",
-                "Personal statement of purpose",
-              ].map((req) => (
-                <li key={req} className="flex items-start gap-2 text-muted-foreground text-sm">
-                  <CheckCircle className="w-4 h-4 text-gold shrink-0 mt-0.5" />
-                  {req}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="bg-card border border-border rounded-2xl p-8">
-            <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold mb-4">Diploma & Certificate Programs</h3>
-            <ul className="space-y-3">
-              {[
-                "High school diploma (Diploma programs)",
-                "Basic computer literacy (Certificate programs)",
-                "Valid identification document",
-                "Completed application form",
-                "Application fee payment",
-              ].map((req) => (
-                <li key={req} className="flex items-start gap-2 text-muted-foreground text-sm">
-                  <CheckCircle className="w-4 h-4 text-gold shrink-0 mt-0.5" />
-                  {req}
-                </li>
-              ))}
-            </ul>
-          </div>
+        <SectionTitle subtitle="General requirements for admission to all SIT programs.">
+          Admission Requirements
+        </SectionTitle>
+        <div className="bg-card border border-border rounded-2xl p-8 max-w-3xl mx-auto">
+          <ul className="grid sm:grid-cols-2 gap-3">
+            {admissionRequirements.map((req) => (
+              <li
+                key={req}
+                className="flex items-start gap-2 text-muted-foreground text-sm"
+              >
+                <CheckCircle className="w-4 h-4 text-gold shrink-0 mt-0.5" />
+                {req}
+              </li>
+            ))}
+          </ul>
         </div>
       </Section>
 
