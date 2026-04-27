@@ -16,9 +16,6 @@ dist-ssr
 .nitro
 *.local
 
-# Bun
-bun.lockb
-
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars
